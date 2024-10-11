@@ -7,12 +7,19 @@ public class App
     public static void main( String[] args ) {
     Scanner scanner = new Scanner(System.in);
     
-    int sk = scanner.nextInt();
-    int faktorials = 1;
-    for (int i = 1;i <= sk; ++i ) {
+    System.out.println("How many times?");
+
+    int reiz = Integer.valueOf(scanner.nextLine());
+    int skaits = 0;
     
-        faktorials *= i;
-        System.out.println(faktorials);
+    while (reiz > skaits){
+        printText();
+        skaits ++;
+
+        }
     }
+
+public static void printText() {
+    System.out.println("Aziet");
 }
 }
