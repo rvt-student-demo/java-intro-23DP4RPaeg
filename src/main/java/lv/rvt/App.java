@@ -5,25 +5,13 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args ) {
-    printTriangle(4);
-}
-    public static void printstars(int number){
-        for (int i = 0; i < number; i++){
-            System.out.print("*");
-        }
-    }
     
-    public static void printSpaces(int number){
-        for (int i = 0; i < number; i++){
-            System.out.println("");
-        }
-    }
+        int[] val = {0, 1, 2, 3};
+
+        int sum = val[0] + val[1] + val[2] + val[3];
+
+        System.out.println("Sum of all numbers = " + sum );
     
-    public static void printTriangle(int size){
-        for (int i = 0; i <= size; i++){
-            printSpaces(size);
-            printstars(i);
-        }
     }
 
 }
