@@ -7,10 +7,12 @@ public class App
     public static void main( String[] args ) {
     
         int[] val = {0, 1, 2, 3}; 
-        int[] temp;
-        temp = new int[4];
+        int temp;
 
-        for (int i = 0; i < 4; i++) { 
+        for (int i = 0; i < val.lenght/2; i++){
+            temp = val[i];
+            val[i] = val[val.lenght - i - 1];
+            val[val.lenght - i -1] = temp;
         }
 
 
