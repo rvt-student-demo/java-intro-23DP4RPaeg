@@ -1,21 +1,17 @@
 package lv.rvt;
 
+import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class App 
 {
-    public static void main( String[] args ) {
-        Timer timer = new Timer();
+    public static void main( String[] args ) throws Exception {
+        Scanner sacanner = new Scanner(System.in);
 
-    while (true) {
-        System.out.println(timer);
-        timer.advance();
+        BufferedReader reader = Helper.getReader("persons.csv");    
 
-    try {
-        Thread.sleep(10);
-    } catch (Exception e) {
-
-    }
-}
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
     }
  }

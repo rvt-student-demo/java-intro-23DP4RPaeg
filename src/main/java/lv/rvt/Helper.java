@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class helper {
+public class Helper {
     
     public static BufferedReader getReader(String filename) throws IOException {
         return Files.newBufferedReader(getFilePath(filename));
