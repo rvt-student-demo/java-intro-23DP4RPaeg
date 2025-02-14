@@ -1,5 +1,5 @@
 package lv.rvt;
-public class CD {
+public class CD implements Packable {
     public String artist;
     public String Name;
     public int year; 

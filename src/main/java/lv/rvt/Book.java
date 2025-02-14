@@ -1,5 +1,5 @@
 package lv.rvt;
-public class Book {
+public class Book implements Packable {
     public String author;
     public String title; 
     public double weight;
